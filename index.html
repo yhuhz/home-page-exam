@@ -17,12 +17,24 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fredoka:wght@300..700&family=Grand+Hotel&family=Pacifico&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS and JS -->
+    <link href="index.css" rel="stylesheet" />
+    <script src="index.js"></script>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#" id="navbar-title">Macaroon 5</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,7 +55,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Our Pastries</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -54,14 +66,14 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Contact Us
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Order</a></li>
+                <li><a class="dropdown-item" href="#">Deliveries</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Custom Orders</a>
                 </li>
               </ul>
             </li>
@@ -71,23 +83,21 @@
     </nav>
 
     <!-- Hero Section -->
-
     <div class="container py-4">
-      <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="p-3 p-md-5 mb-4 rounded-3" id="hero-section">
         <div class="container-fluid py-5 text-center">
-          <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+          <h1 class="display-5 fw-bold">Soothe your Sweet Tooth</h1>
           <p class="col-md-12 fs-4">
-            Using a series of utilities, you can create this jumbotron, just
-            like the one in previous versions of Bootstrap. Check out the
-            examples below for how you can remix and restyle it to your liking.
+            Macaroon 5, the ultimate pastry shop for those with a sweet tooth.
+            Indulge in our delightful selection of cakes, macarons, and
+            pastries, crafted to satisfy your cravings and bring joy to every
+            bite.
           </p>
-          <button class="btn btn-primary btn-lg" type="button">
-            Example button
-          </button>
+          <button class="btn btn-primary btn-lg" type="button">Buy now!</button>
         </div>
       </div>
 
-      <div class="row align-items-md-stretch">
+      <!-- <div class="row align-items-md-stretch">
         <div class="col-md-6">
           <div class="h-100 p-5 text-white bg-dark rounded-3">
             <h2>Change the background</h2>
@@ -115,7 +125,201 @@
             </button>
           </div>
         </div>
+      </div> -->
+    </div>
+
+    <!-- Location -->
+    <div class="container marketing text-center">
+      <h1 class="p-3">Where are we located?</h1>
+      <div class="row">
+        <div class="col-lg-4">
+          <img
+            src="https://www.lamudi.com.ph/journal/wp-content/uploads/2018/04/Quezon_Memorial_City-Wikimedia-Commons-Judgefloro-700x525.jpg"
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+          />
+
+          <h2>Quezon City</h2>
+          <p>
+            Visit us at Sweet Haven Street, Quezon City, where every corner is
+            filled with the aroma of freshly baked pastries and the warmth of
+            delightful treats.
+          </p>
+          <p>
+            <a
+              class="btn btn-secondary"
+              href="https://getbootstrap.com/docs/5.0/examples/carousel/#"
+              >View details »</a
+            >
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="https://ulidigitalmarketing.blob.core.windows.net/ulidcnc/sites/37/2020/03/BGC_003-480x320.jpg"
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+          />
+
+          <h2>Bonifacio Global City</h2>
+          <p>
+            Discover us at Sweet Bliss Avenue, Bonifacio Global City, where the
+            vibrant city life meets the comforting charm of our delectable
+            pastries and desserts.
+          </p>
+          <p>
+            <a
+              class="btn btn-secondary"
+              href="https://getbootstrap.com/docs/5.0/examples/carousel/#"
+              >View details »</a
+            >
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <svg
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 140x140"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"></rect>
+            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          </svg>
+
+          <h2>Heading</h2>
+          <p>
+            And lastly this, the third column of representative placeholder
+            content.
+          </p>
+          <p>
+            <a
+              class="btn btn-secondary"
+              href="https://getbootstrap.com/docs/5.0/examples/carousel/#"
+              >View details »</a
+            >
+          </p>
+        </div>
       </div>
     </div>
+
+    <hr class="m-5" />
+
+    <!-- Carousel -->
+    <div class="justify-content-center pb-3 pb-md-5 pb-lg-5 text-center">
+      <h1 id="about-me">Check out our delicious <span>products</span></h1>
+      <div class="container mt-5">
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <div class="col-auto">
+              <img
+                src="https://png.pngtree.com/png-vector/20240130/ourmid/pngtree-cupcake-png-with-ai-generated-png-image_11571382.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://png.pngtree.com/png-clipart/20230427/original/pngtree-cake-dessert-food-transparent-png-image_9116681.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/022/228/586/non_2x/set-of-birthday-colorful-cupcake-free-png.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://png.pngtree.com/png-vector/20230418/ourmid/pngtree-birthday-cake-candles-celebration-transparent-png-image_6708793.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/017/340/380/small/birthday-cake-with-candles-png.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-birthday-cake-png-png-image_13144564.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://png.pngtree.com/png-clipart/20231016/original/pngtree-cake-wedding-love-png-image_13324082.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://pngimg.com/d/macaron_PNG104.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://png.pngtree.com/png-clipart/20250221/original/pngtree-profiterole-isolated-on-transparent-png-image_20485952.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/048/922/825/non_2x/creme-brulee-in-white-ceramic-bowl-isolated-on-transparent-background-png.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://png.pngtree.com/png-clipart/20231014/original/pngtree-mille-feuille-sweet-white-picture-image_13156269.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://png.pngtree.com/png-vector/20230902/ourmid/pngtree-tiramisu-cake-isolated-png-image_9242463.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://png.pngtree.com/png-clipart/20240518/original/pngtree-bakery-shop-desserts-sweet-cakes-and-cookies-png-image_15121469.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/053/506/030/non_2x/assorted-desserts-arranged-on-a-white-background-png.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://png.pngtree.com/png-clipart/20241102/original/pngtree-colorful-candy-birthday-cake-with-lollipop-decoration-clipart-png-image_16620345.png"
+                class="tools-img"
+              />
+            </div>
+            <div class="col-auto">
+              <img
+                src="https://www.pngarts.com/files/8/Cake-Pop-Transparent-Background-PNG.png"
+                class="tools-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+      <p>&copy; 2025 Macaroon 5. All rights reserved.</p>
+    </footer>
   </body>
 </html>
