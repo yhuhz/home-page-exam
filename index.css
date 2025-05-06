@@ -50,6 +50,10 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+span {
+  font-family: 'Grand Hotel';
+}
+
 .location-cards h2 {
   color: rgba(159, 23, 189, 0.644);
 }
