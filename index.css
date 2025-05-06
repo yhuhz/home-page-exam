@@ -18,10 +18,52 @@ body {
   background-color: rgba(255, 255, 255, 0.349) !important;
 }
 
+#hero-section button {
+  background: linear-gradient(
+    to right,
+    #ff7f50,
+    #ff69b4
+  ); /* Deeper coral to soft rose */
+  color: white;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#hero-section button:hover {
+  background: linear-gradient(
+    to right,
+    #ff4500,
+    #ff1493
+  ); /* Richer sunset orange to deep pink */
+  transform: scale(1.1); /* Makes the button appear larger */
+}
+
 h1 {
   background: linear-gradient(to right, #ff1b6b, #45caff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.location-cards h2 {
+  color: rgba(159, 23, 189, 0.644);
+}
+
+.location-cards p {
+  height: 120px;
+  overflow: auto;
+}
+
+.location-cards a {
+  background: linear-gradient(to right, #ffa07a, #ff69b4);
+  border: none;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+}
+
+.location-cards a:hover {
+  background: linear-gradient(to right, #ff4500, #ff1493);
+  transform: scale(1.1);
 }
 
 .tools-img {
