@@ -20,11 +20,11 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-#hero-section {
+#hero {
   background-color: rgba(255, 255, 255, 0.349) !important;
 }
 
-#hero-section button {
+#hero button {
   background: linear-gradient(
     to right,
     #ff7f50,
@@ -35,7 +35,7 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-#hero-section button:hover {
+#hero button:hover {
   background: linear-gradient(
     to right,
     #ff4500,
@@ -162,6 +162,31 @@ span {
   max-width: 200px; /* Default for all screens */
   height: auto; /* Maintain aspect ratio */
   /* transition: transform 0.2s; */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.card img {
+  height: 200px;
+}
+
+.card a {
+  background: linear-gradient(to right, #ffa07a, #ff69b4);
+  border: none;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+}
+
+.card a:hover {
+  background: linear-gradient(to right, #ff4500, #ff1493);
+  transform: scale(1.1);
+}
+
+.card-body p {
+  height: 100px;
 }
 
 footer {
