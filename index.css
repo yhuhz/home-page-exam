@@ -1,3 +1,9 @@
+html {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 body {
   background: linear-gradient(to right, #ffb6c1, #ffdab9);
   font-family: Fredoka;
@@ -51,6 +57,13 @@ h1 {
 .location-cards p {
   height: 120px;
   overflow: auto;
+}
+
+@media (max-width: 900px) {
+  .location-cards p {
+    max-height: 100px;
+    overflow: auto;
+  }
 }
 
 .location-cards a {
