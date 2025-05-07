@@ -52,6 +52,9 @@ h1 {
 
 span {
   font-family: 'Grand Hotel';
+  background: linear-gradient(to right, #ff1b6b, #45caff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .location-cards h2 {
